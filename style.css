@@ -27,10 +27,10 @@ overflow-x: hidden !important;
 
     --secondary: linear-gradient(
         to right bottom,
-        #588acc,
-        #6058cc,
-        #9458cc,
-        #50207c
+        #439e44,
+        #415f9e,
+        #f59281,
+        #eb4629
     );
 
     --textColor: #1c366e;
@@ -49,15 +49,50 @@ overflow-x: hidden !important;
 
     --secondaryHover: linear-gradient(
         to right bottom,
-        #81a1cc,
-        #8681ce,
-        #a47fc7,
-        #63477c
+        #eb4629,
+        #acf17d,
+        #62c5dd,
+        #01745b
     );
 
     --textColorHover: #1f2541;
 }
 
+/* Section Title*/
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 3rem auto;
+    position: relative;
+    width: max-content;
+}
+
+.section-title-main {
+    background: var(--secondary);
+    color: var(--white);
+    padding: 0.4rem;
+    border-top-left-radius: 1rem;
+    display: inline;
+}
+
+.section-title-main::after {
+    content: '';
+    height: 1.2rem;
+    width: 1.2rem;
+    position: absolute;
+    bottom: -1.5rem;
+    right: -1.5rem;
+    background:  #eb4629;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.section-title-sub {
+    color: var(--textColor);
+}
+
+/* Header */
 header {
     display:flex;
     justify-content: space-between;
@@ -276,4 +311,62 @@ header {
          font-size: 2.5rem;
       }
     
+}
+
+/* Projects*/
+
+.project-content {
+    display: grid;
+    margin: 3rem 0rem 4rem 0rem;
+    align-items: center;
+}
+
+.project-content-card {
+    margin: 3rem auto;
+    width: 80%;
+}
+
+.project-content-card img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.project-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--textColor);
+    padding-right: 3rem;
+    border-bottom: 2px solid var(--textColor);
+}
+
+.project-link img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0.3rem;
+   
+}
+
+.project-description {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    text-align: justify;
+    color: var(--textLightColor);
+}
+
+.technologies-title {
+    padding: 0.4rem;
+    border-bottom: 2px solid var(--textColor);
+    width: max-content;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    color: var(--textColor);
+    padding-right: 5rem;
 }
