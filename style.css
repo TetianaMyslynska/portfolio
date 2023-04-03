@@ -56,6 +56,12 @@ overflow-x: hidden !important;
     );
 
     --textColorHover: #1f2541;
+
+     /* Box shadow style */
+  --shadow: rgba(0, 0, 0, 0.062) 0px 3px 5px;
+
+  /* Box shadow hovers */
+  --shadowHover: rgba(143, 143, 143, 0.212) 0px 5px 15px;
 }
 
 /* Section Title*/
@@ -97,6 +103,14 @@ header {
     display:flex;
     justify-content: space-between;
     padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    z-index: 100;
+}
+
+header.active {
+    box-shadow: var(--shadow);
 }
 .menu {
    display: flex;
@@ -117,7 +131,6 @@ header {
 
 .menu.active {
     transform: translateX(0);
-
 }
 
 .burger {
