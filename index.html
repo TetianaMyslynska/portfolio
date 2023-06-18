@@ -15,8 +15,8 @@
         <ul class="menu">
             <li data-key="home"  class="menu-link">Home</li>
             <li data-key="projects" class="menu-link">Projects</li>
-            <li data-key="about me" class="menu-link">About me</li>
-            <li data-key="contact" class="menu-link">Contact</li>
+            <li data-key="about" class="menu-link">About me</li>
+            <li data-key="contact" class="menu-link contact-btn">Contact</li>
         </ul>
         <button class="burger">
             <span></span>
@@ -30,9 +30,14 @@
    <img class="home-image" src="./images/codingirl.gif" alt="landing-image"> 
     <div class="home-content">
         <h1>Tetiana Myslynska</h1>
-        <span>Frontend Developer</span>
+        <span># UI i UX Audyt strony internetowej</span>
+        <span># Kampania Google Ads</span>
+        <span># E-mail marketing</span>
+        <span># Audyt SEO</span>
         <div class="home-icons">
+            <link rel="stylesheet" href="">
             <img src="./images/icons/linkedin-logo.svg" alt="Linkedin-icon">
+            
             <img src="./images/icons/github_icon.svg" alt="Github-icon">
         </div>
     </div>
@@ -93,7 +98,7 @@
     </div>
 </main>
 <!--ABOUT-->
-<article class="about">
+<section class="about">
     <div class="section-title">
         <p class="section-title-main">About</p>
         <span class="section-title-sub">me</span>
@@ -115,8 +120,12 @@
         </p>
         <img src="./images/codingteam.png" alt="about image">
     </div>
-</article>
-<section class="technologies">
+</section>
+<div class="section-title">
+    <p class="section-title-main">Techno</p>
+    <span class="section-title-sub">logies</span>
+</div>
+<section class="technologies-content">
     <div class="technologies-item">
         <img src="./images/icons/html5.svg" alt="html5 icon">
         <p class="technologies-item-title">HTML5</p>
@@ -124,10 +133,6 @@
     <div class="technologies-item">
         <img src="./images/icons/css-3.png" alt="css icon">
         <p class="technologies-item-title">CSS</p>
-    </div>
-    <div class="technologies-item">
-        <img src="./images/icons/sass.svg" alt="sass icon">
-        <p class="technologies-item-title">Sass</p>
     </div>
     <div class="technologies-item">
         <img src="./images/javascript-svgrepo-com.svg" alt="javascript icon">
@@ -139,13 +144,37 @@
     </div>
     <div class="technologies-item">
         <img src="./images/icons/webpack.svg" alt="webpack icon">
-        <p class="technologies-item-title">React</p>
+        <p class="technologies-item-title">Webpack</p>
     </div>
 </section>
+<div class="section-title">
+    <p class="section-title-main">Send me</p>
+    <span class="section-title-sub">a message</span>
+</div>
+<section class="contact">
+   <img src="./images/Mail.gif" alt="mail image">
+   
+    <form class="contact-form" action="https://formspree.io/f/mrgvnyjk"
+    method="POST">
+        <div class="contact-form-field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="contact-form-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="contact-form-field">
+            <label for="message">Message</label>
+            <textarea type="text" name="message" cols="30" rows="10" id="message"></textarea>
+        </div>
+
+        <input name="_redirect" type="hidden" id="name" value="https://">
+        <button class="contact-form-btn">Submit</button>
+    </form>
+</section>
+<footer>Copyright &copy; 2023 Tetiana Myslynska. All rights reserved.</footer>
     <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-
-
-
     <script src="main.js"></script>
 </body>
 </html>

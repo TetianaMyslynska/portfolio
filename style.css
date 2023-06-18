@@ -38,13 +38,11 @@ overflow-x: hidden !important;
 
  /* Hover */
 
-    --mainHover: linear-gradient (
-        to left bottom, 
+    --mainHover: linear-gradient(
+        to right bottom, 
         #67a368,
         #70a186,
-        #66879b,
-        #536885,
-        #424b72
+        #66879b
     );
 
     --secondaryHover: linear-gradient(
@@ -127,6 +125,14 @@ header.active {
    left: 0;
    top: 0;
    transform: translateX(100%);
+}
+
+.menu-link{
+    cursor: pointer;
+}
+
+.menu-link:last-child:hover{
+background: var(--mainHover);
 }
 
 .menu.active {
@@ -330,7 +336,7 @@ header.active {
 
 .projects-content {
     display: grid;
-    margin: 2rem 0rem 4rem 0rem;
+    margin: 2rem 0rem 0rem 0rem;
     align-items: center;
 }
 
@@ -442,7 +448,7 @@ header.active {
 .about img {
     width: 85%;
     display: block;
-    margin: 1rem auto;
+    margin: 2rem auto;
 }
 
 @media only screen and (min-width: 780px){
@@ -487,4 +493,158 @@ header.active {
     .about{
         width: 70%;
     }
+}
+
+/*Technologies*/
+
+.technologies-content {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;  
+ align-items: center;
+ gap: 1rem;
+ padding: 0rem 2rem 2rem 2rem;
+
+}
+
+.technologies-item {
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.technologies-item:hover{
+    box-shadow: var(--shadowHover);
+}
+
+.technologies-item img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.technologies-item-title {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: var(--textLightColor);
+}
+
+@media only screen and (min-width: 1500px){
+    .technologies-item {
+        margin: 2rem;
+    }
+}
+
+/*Contact*/
+.contact img{
+    display: none; 
+}
+
+.contact-form{
+    margin: 1rem auto;
+    width: 80%;
+}
+
+.contact-form-field{
+    margin: 1rem;
+}
+
+.contact-form label{
+ display: block;
+ font-size: 1rem;
+ margin-bottom: 0.2rem;
+ color: var(--textColor);   
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 0.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--textLightColor);
+}
+
+.contact-form-btn{
+    background: var(--main);
+    border: none;
+    color: var(--white);
+    width: 30%;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form-btn:hover{
+    background: var(--mainHover);
+}
+
+@media only screen and (min-width: 900px){
+    .contact-form {
+        width: 65%; 
+    }
+}
+
+@media only screen and (min-width: 1100px){
+    .contact img{
+        display: block;
+        width: 45%;
+    }
+
+    .contact {
+        display: flex;
+    }
+
+    .contact-form {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .contact-form {
+        width: 80%; 
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1800px){
+    .contact-form {
+        width: 65%; 
+        margin: 0 auto;
+    }
+}
+
+/*Footer*/
+
+footer {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+    background: var(--main);
+    color: var(--white);
+}
+
+@media only screen and (min-width: 1500px){
+    .footer {
+        font-size: 1.1rem;
+    }
+}
+
+.thankyou-alert h2 {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    margin: 5rem auto;
+    color: var(--textColor);
+}
+
+.thankyou-alert img{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
 }
