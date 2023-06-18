@@ -10,11 +10,11 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./images/icons/mylog.svg" alt="website-logo">
+            <img src="./images/orangelogo-removebg-preview.png" alt="logo">
         </div>
         <ul class="menu">
-            <li data-key="home"  class="menu-link">Home</li>
-            <li data-key="projects" class="menu-link">Projects</li>
+            <li data-key="home"  class="menu-link">O mnie</li>
+            <li data-key="projects" class="menu-link">Projekty</li>
             <li data-key="about" class="menu-link">About me</li>
             <li data-key="contact" class="menu-link contact-btn">Contact</li>
         </ul>
@@ -27,34 +27,39 @@
 
     <!-- Call to action section -->
 <section class="home">
-   <img class="home-image" src="./images/codingirl.gif" alt="landing-image"> 
+   <img class="home-image" src="./images/sitepicture.png" alt="landing-image"> 
     <div class="home-content">
-        <h1>Tetiana Myslynska</h1>
+        <h1>Cześć! Nazywam się<br> Tetiana Myslynska</h1>
+        <p>Co mogę zrobić dla Ciebie:</p>
         <span># UI i UX Audyt strony internetowej</span>
         <span># Kampania Google Ads</span>
         <span># E-mail marketing</span>
         <span># Audyt SEO</span>
         <div class="home-icons">
-            <link rel="stylesheet" href="">
-            <img src="./images/icons/linkedin-logo.svg" alt="Linkedin-icon">
-            
-            <img src="./images/icons/github_icon.svg" alt="Github-icon">
+            <a href="https://linkedin.com/in/tetiana-myslynska-4a76a7162" target="_blank">
+                <img src="./images/icons/linkedin-logo.svg" alt="Linkedin-icon">
+            </a>
+            <a href="https://github.com/TetianaMyslynska?tab=repositories" target="_blank">
+                <img src="./images/icons/github_icon.svg" alt="Github-icon">
+            </a>
         </div>
     </div>
 </section>
 
 <main class="projects">
     <div class="section-title">
-        <p class="section-title-main">Hands-on</p>
-        <span class="section-title-sub">projects</span>
+        <p class="section-title-main">Praktyczne</p>
+        <span class="section-title-sub">projekty</span>
     </div>
     <div class="projects-content">
         <div class="project-content-card">
-            <img src="./images/first-project.svg" alt="first-project">
+            <img src="./images/decoretta-pl.png" alt="first-project">
             <div class="project-info">
-                <p class="project-name">First Project</p>
-                <a href="/" class="project-link">
-                    <img src="./images/code.svg" alt="code-icon">
+                <p class="project-name">Kampania Google Ads dla 
+                    <a href=”https://decoretta.pl/”>decoretta.pl</a>
+                </p>
+                <a href="https://docs.google.com/spreadsheets/d/1f9MHVEkhyv051T9yU5mBo1OyXj6j7exyueduYdiKVjg/edit#gid=0" class="project-link">
+                    <img src="./images/icons/code.svg" alt="code-icon">
                 </a>
             </div>
             <p class="project-description">
@@ -64,11 +69,13 @@
                 voluptas.
             </p>
             <div class="project-technologies">
-                <p class="technologies-title">Technologies used</p>
+                <p class="technologies-title">Narzędzia</p>
                 <div class="technologies-icons">
-                    <img src="./images/html5.svg" alt="html-icon">
-                    <img src="./images/sass.svg" alt="saas-icon">
-                    <img src="./images/javascript-svgrepo-com.svg" alt="js-icon">
+                    <img src="./images/senuto.png" alt="senuto-icon">
+                    <img src="./images/google-ads-icon.png" alt="google-ads-icon">
+                    <a href="https://docs.google.com/spreadsheets/d/1f9MHVEkhyv051T9yU5mBo1OyXj6j7exyueduYdiKVjg/edit#gid=0" target="_blank">
+                        <img src="./images/google-sheets-icon.png" alt="google-sheets-icon">
+                    </a>
                 </div>
             </div>
         </div>
@@ -76,8 +83,8 @@
             <img src="./images/second-project.svg" alt="first-project">
             <div class="project-info">
                 <p class="project-name">Second Project</p>
-                <a href="/" class="project-link">
-                    <img src="./images/code.svg" alt="code-icon">
+                <a href="https://docs.google.com/spreadsheets/d/1f9MHVEkhyv051T9yU5mBo1OyXj6j7exyueduYdiKVjg/edit#gid=0" class="project-link">
+                    <img src="./images/icons/code.svg" alt="code-icon">
                 </a>
             </div>
             <p class="project-description">
@@ -148,27 +155,27 @@
     </div>
 </section>
 <div class="section-title">
-    <p class="section-title-main">Send me</p>
-    <span class="section-title-sub">a message</span>
+    <p class="section-title-main">Wyślij</p>
+    <span class="section-title-sub">wiadomość</span>
 </div>
 <section class="contact">
    <img src="./images/Mail.gif" alt="mail image">
    
     <form class="contact-form" action="https://formsubmit.co/tetmyslynska@gmail.com" method="POST">
         <div class="contact-form-field">
-            <label for="name">Name</label>
+            <label for="name">Imię i nazwisko*</label>
             <input type="text" name="name" id="name" required>
         </div>
         <div class="contact-form-field">
-            <label for="email">Email</label>
+            <label for="email">Email*</label>
             <input type="email" name="email" id="email" required>
         </div>
         <div class="contact-form-field">
-            <label for="message">Message</label>
-            <textarea type="text" name="message" cols="30" rows="10" id="message"></textarea>
+            <label for="message">Twoja wiadomość*</label>
+            <textarea type="text" name="message" cols="30" rows="10" id="message" required></textarea>
         </div>
 
-        <input name="_redirect" type="hidden" id="name" value="https://http://127.0.0.1:5500/dziekuje.html">
+        <input name="_redirect" type="hidden" id="name" value="https://tetianamyslynska.github.io/portfolio/dziekuje/">
         <button class="contact-form-btn">Submit</button>
     </form>
 </section>
