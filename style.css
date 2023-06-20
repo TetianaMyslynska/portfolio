@@ -62,13 +62,27 @@ overflow-x: hidden !important;
   --shadowHover: rgba(143, 143, 143, 0.212) 0px 5px 15px;
 }
 
+a {
+    color: var(--textColor);
+   text-decoration: none;
+}
+
+.text-link{
+    text-decoration: underline;
+}
+
+a:hover {
+color:#eb4629;
+}
+
+
 /* Section Title*/
 
 .section-title {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    margin: 8rem auto 5rem auto;
+    margin: 6rem auto 4rem auto;
     position: relative;
     width: max-content;
 }
@@ -261,16 +275,24 @@ background: var(--mainHover);
     color: var(--textColor);
 }
 
+.home-content h1{
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+    color: var(--textColor);
+}
+
 .home-content p{
     
-        margin-top: 1rem;
+        margin: 2rem;
         font-size: 2rem;
-        font-weight: 600;
+       font-weight: 500;
+       font-style: italic;
         text-align: center;
         color: #eb4629;
     
 }
-.home-content span {
+.home-content h2 {
     font-size: 1.8rem;
     display: block;
     margin-top: 1rem;
@@ -279,7 +301,7 @@ background: var(--mainHover);
 .home-icons {
     background: var(--main);
     width: max-content;
-    margin: 1rem auto;
+    margin: 2rem auto;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     display: flex;
@@ -354,8 +376,9 @@ background: var(--mainHover);
 
 .projects-content {
     display: grid;
-    margin: 2rem 0rem 0rem 0rem;
-    align-items: center;
+    margin: 0 auto;
+  
+    text-align: center;
 }
 
 .project-content-card {
@@ -386,7 +409,7 @@ background: var(--mainHover);
     border-bottom: 2px solid var(--textColor);
 }
 
-.project-name a{
+.project-name span{
     color: #eb4629;
 }
 
@@ -398,10 +421,16 @@ background: var(--mainHover);
 }
 
 .project-description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0.4rem;
+    line-height: 1.6rem;
     text-align: justify;
-    color: var(--textLightColor);
+    color: var(--textColor);
+}
+
+.summary {
+    color: #eb4629;
+    font-weight: bold;
 }
 
 .technologies-title {
@@ -449,6 +478,13 @@ background: var(--mainHover);
 
 /*About*/
 
+.about:hover {
+color:#eb4629;
+}
+
+.certyficat:hover {
+    color:#eb4629;
+}
 .about-description {
     font-size: 1.2rem;
     padding: 1.0rem;
