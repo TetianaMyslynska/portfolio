@@ -63,13 +63,14 @@ overflow-x: hidden !important;
 }
 
 a {
-    color: var(--textColor);
+    /*color: var(--textColor);*/
    text-decoration: none;
 }
 
 .text-link{
     text-decoration: underline;
 }
+
 
 a:hover {
 color:#eb4629;
@@ -121,6 +122,7 @@ header {
     z-index: 100;
 }
 
+
 header.active {
     box-shadow: var(--shadow);
 }
@@ -152,6 +154,7 @@ header.active {
 
 .menu-link:last-child:hover{
 background: var(--mainHover);
+
 }
 
 .menu.active {
