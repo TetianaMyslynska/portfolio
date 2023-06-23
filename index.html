@@ -14,15 +14,17 @@
             <img src="./images/tmlogowhite.png" alt="logo">
         </div>
         <ul class="menu">
-            <li data-key="home"  class="menu-link">
-                <a href="#about">O mnie</a>
+            <li data-key="aboutme"  class="menu-link">
+                <a href="./index.html" type="link">O mnie</a>
             </li>
             <li data-key="projects" class="menu-link">
                 <a href="./projekty.html" type="link">Projekty</a>
             </li>
-            <li data-key="blog" class="menu-link">Myśli</li>
+            <li data-key="blog" class="menu-link">
+                <a href="./blog.html" type="link">Blog</a></li>
+            </li>
             <li data-key="contact" class="menu-link contact-btn">
-                <a href="./kontakt.html">Kontakt</a>
+                <a href="./kontakt.html" type="link">Kontakt</a>
             </li>
         </ul>
         <button class="burger">
@@ -33,219 +35,254 @@
     </header>
 
     <!-- Call to action section -->
-<section class="home">
-   <img class="home-image" src="./images/sitepicture.png" alt="landing-image"> 
-    <div class="home-content">
-        <h1>Cześć! Nazywam się<br> Tetiana Myslynska</h1>
-        <p>Jestem świeżo po kursie <b>"Marketing Internetowy" od 
-            Google </b>i SGH Warszawa, szukam nieszablonowej 
-            agencji marketingowej, żeby od początku nauczyć 
-            się tych dobrych i odważnych praktyk &#128293;</p>
-        <div>
-            <a href="https://cdn.umiejetnoscijutra.pl/certificates/2c7b34e7-2920-4a25-92b7-b35391875235" target="_blank" class="certyficat">
-            Certyfikat 
-            </a>
-            | <a href="#about" class="about">Więcej o mnie...</a>
-        </div>
-        <div class="home-icons">
-            <a href="https://linkedin.com/in/tetiana-myslynska-4a76a7162" target="_blank">
-                <img src="./images/icons/linkedin-logo.svg" alt="Linkedin-icon">
-            </a>
-            <a href="https://github.com/TetianaMyslynska?tab=repositories" target="_blank">
-                <img src="./images/icons/github_icon.svg" alt="Github-icon">
-            </a>
-        </div>
-    </div>
-</section>
+<div class="container">
+    <section class="section home">
+    <img class="home-image" src="./images/sitepicture2.png" alt="landing-image"> 
+        <div class="home-content">
+            <h1>Cześć! Jestem Tetiana</h1>
+            <p>Jestem świeżo po kursie "Marketing Internetowy" od 
+                Google i SGH Warszawa, szukam nieszablonowej 
+                agencji marketingowej, żeby od początku nauczyć 
+                się tych dobrych i &#128293; odważnych praktyk. 
+                <a href="#about" class="about">Więcej o mnie...</a>
+            </p>
 
-<main class="projects">
-    <div class="section-title">
-        <p class="section-title-main">Praktyczne</p>
-        <span class="section-title-sub">projekty</span>
-    </div>
-    <div class="projects-content">
-        <div class="project-content-card">
-            <a href="http://docs.google.com/spreadsheets/d/1f9MHVEkhyv051T9yU5mBo1OyXj6j7exyueduYdiKVjg/edit#gid=0" target="_blank">
-            <img src="./images/arkuszegoogle.png" alt="first-project">
-        </a>
-            <div class="project-info">
-                <h2 class="project-name">Kampania Google Ads dla <span>decoretta.pl</span>
-                </h2>
-                <a href="http://docs.google.com/spreadsheets/d/1f9MHVEkhyv051T9yU5mBo1OyXj6j7exyueduYdiKVjg/edit#gid=0" class="project-link" target="_blank">
-                    <img src="./images/icons/code.svg" alt="code-icon">
+            <div class="certyficat">
+                <a href="https://cdn.umiejetnoscijutra.pl/certificates/2c7b34e7-2920-4a25-92b7-b35391875235" target="_blank" class="certyficat">
+                Certyfikat 
+                </a>
+                
+            </div>
+            <div class="home-icons">
+                <a href="https://linkedin.com/in/tetiana-myslynska-4a76a7162" target="_blank">
+                    <img src="./images/icons/linkedin-logo.svg" alt="Linkedin-icon">
+                </a>
+                <a href="https://github.com/TetianaMyslynska?tab=repositories" target="_blank">
+                    <img src="./images/icons/github_icon.svg" alt="Github-icon">
                 </a>
             </div>
-            <div class="project-description">
-            <p>
-                    Przed uruchamianiem kampanii Google Ads, sprawdzam, czy witryna jest podpięta do Google Analytics4.
-                    W związku z tym, że witryna nie była podpięta do żadnych narzędzi analitycznych, nie mamy żadnych poprzednich danych. Wiek domeny 11 lat!
-                    <br><br>
-                    Zaleca się:
-                    <ul>
-                        <li>niezwłocznie założyć i skonfigurować konto firmy na GA4 i podpiąć witrynę;</li>
-                        <li>założyć konto na Google Merchant Center (przydatne do kampanii produktowych);</li>
-                        <li>utworzyć konto na www.tagmanager.google.com (żeby konfigurować tagi i zdarzenia, jakie będą śledzone w witrynie).</li>
-                    </ul>
-                    Po wykonaniu wszystkich wyżej wymienionych zaleceń, można planować kampanię Google Ads czy jakąkolwiek inna. 
-                    <br><br>
-                    <h3>Planowanie kampanii Google Ads sklepu decoretta.pl:</h3>
-            </p>
-                <div>
-                    <details>
-                        <summary style="cursor:pointer" class="summary">Czytaj więcej... </summary>
-                        <p>
-                    <ul>
-                        <li>ustalamy „Buyer Persona”, do kogo będziemy kierować komunikat reklamowy (szczegółowo rozpisany 
-                            <a href="https://docs.google.com/spreadsheets/d/1f9MHVEkhyv051T9yU5mBo1OyXj6j7exyueduYdiKVjg/edit#gid=0" target="_blank" class="text-link">Plan kampanii Google Ads</a>);
-                        </li>
-                        <li>poznaję założenia, potrzeby oraz oczekiwania Klienta (decoretta.pl), po czym ustalam wskaźniki KPI, które będę analizować i ulepszać.<br><br>
-                            W tym przypadku to: CPA (koszt jednego zakupu), ROAS (zwrot z inwestycji w reklamę);
-                        </li>
-                        <li>żeby zwiększyć sprzedaż, tworzę kampanię reklamową w sieci wyszukiwania Google (szczegóły, teksty reklam, słowa kluczowe, nagłówki podane w Arkuszu Google)</li>
-                    </ul>
-                    <br><br>
-                    <h3>Po rozpoczęciu kampanii reklamowej, zbieram dane i optymalizuję działania reklamowe:</h3>
-                    <ul>
-                        <li>analizuję i wykluczam produkty, słowa kluczowe, miejsca docelowe;</li>
-                        <li>zmieniam stawki, testuję;</li>
-                        <li>przenoszę budżety na lepiej działające grupy reklam;</li>
-                        <li>dostosowuję teksty reklam do świąt kalendarzowych (Dzień Ojca, Dzień Matki...)</li>
-                    </ul>
-                    Żeby zwiększyć ruch na stronie można też zrobić kampanię banerową na YouTube. 
-                    
-                   </p>
-                   </details> 
-                </div>
-            </div>
-            <div class="project-technologies">
-                <p class="technologies-title">Narzędzia</p>
-                <div class="technologies-icons">
-                    <img src="./images/google-ads-icon.png" alt="google-ads-icon">
-                    <img src="./images/google-analytics-icon.png" alt="analytics-icon">
-                    <a href="http://docs.google.com/spreadsheets/d/1f9MHVEkhyv051T9yU5mBo1OyXj6j7exyueduYdiKVjg/edit#gid=0" target="_blank">
-                        <img src="./images/google-sheets-icon.png" alt="google-sheets-icon">
+        </div>
+    </section>
+
+    <main class="section projects">
+        <div class="section-title">
+            <p class="section-title-main">Praktyczne</p>
+            <span class="section-title-sub">projekty</span>
+        </div>
+        <div class="projects-content">
+            <div class="project-content-card">
+                <a href="http://docs.google.com/spreadsheets/d/1f9MHVEkhyv051T9yU5mBo1OyXj6j7exyueduYdiKVjg/edit#gid=0" target="_blank">
+                <img src="./images/arkuszegoogle.png" alt="first-project">
+            </a>
+                <div class="project-info">
+                    <h2 class="project-name">Kampania Google Ads dla <span>decoretta.pl</span>
+                    </h2>
+                    <a href="http://docs.google.com/spreadsheets/d/1f9MHVEkhyv051T9yU5mBo1OyXj6j7exyueduYdiKVjg/edit#gid=0" class="project-link" target="_blank">
+                        <img src="./images/icons/code.svg" alt="code-icon">
                     </a>
                 </div>
-            </div>
-        </div>
-        <div class="project-content-card">
-            <a href="https://docs.google.com/document/d/1saheeMDk9yHl5zsn86se9AnS1F6Zx9izSRi9uj-nlBA/edit" target="_blank">
-            <img src="./images/decorettasenuto.png" alt="second-project">
-                </a>
-            <div class="project-info">
-                <h2 class="project-name">Krótki audyt UI i UX witryny, audyt SEO</h2>
-                <a href="https://docs.google.com/document/d/1saheeMDk9yHl5zsn86se9AnS1F6Zx9izSRi9uj-nlBA/edit" class="project-link" target="_blank">
-                    <img src="./images/icons/code.svg" alt="code-icon">
-                </a>
-            </div>
-            <div class="project-description">
-                <p>       
-                        Przed rozpoczęciem jakichkolwiek działań reklamowych, robię:
-                     <ul>
-                        <li>krótką analizę UI i UX witryny</li>
-                        <a href="https://docs.google.com/document/d/1saheeMDk9yHl5zsn86se9AnS1F6Zx9izSRi9uj-nlBA/edit" target="_blank" class="text-link">
-                        
-                            <li>krótką analizę SEO, porównanie strony do konkurencji </li>
-                        </a>
-                     </ul>
-                     <br>
-                        <h3>Krótka analiza UI i UX pokazała, że strona „decoretta.pl” potrzebuje poprawy:</h3>
+                <div class="project-description">
+                <p>
+                        Przed uruchamianiem kampanii Google Ads, sprawdzam, czy witryna jest podpięta do Google Analytics4.
+                        W związku z tym, że witryna nie była podpięta do żadnych narzędzi analitycznych, nie mamy żadnych poprzednich danych. Wiek domeny 11 lat!
+                        <br>
+                        Zaleca się:
                         <ul>
-                            <li>zmienić (zmniejszyć) logo w górnej części witryny (zajmuje prawie połowę przestrzeni widocznej);</li>
-                            <li>dodać favicon do witryny;</li>
-                            <li>menu Główne ma linki nie do kategorii produktów, tylko do treści tekstowych typu: „Kim jesteśmy?”, „Jak pakujemy?”</li>
-                            <li>przy wyborze grupy produktów, zamiast odrazu zobaczyć produkty, klient widzi tekst opisowy. Musi scrollować, żeby dostać się do kartek produktów;</li>
-                            <li>przy wyborze sposobu wysyłki „Odbiór osobisty”, nie podano Adresu odbioru. Trzeba go samodzielnie szukać po witrynie.</li>
+                            <li>niezwłocznie założyć i skonfigurować konto firmy na GA4 i podpiąć witrynę;</li>
+                            <li>założyć konto na Google Merchant Center (przydatne do kampanii produktowych);</li>
+                            <li>utworzyć konto na www.tagmanager.google.com (żeby konfigurować tagi i zdarzenia, jakie będą śledzone w witrynie).</li>
                         </ul>
+                        Po wykonaniu wszystkich wyżej wymienionych zaleceń, można planować kampanię Google Ads czy jakąkolwiek inna. 
+                        
+                        <h3>Planowanie kampanii Google Ads sklepu decoretta.pl:</h3>
                 </p>
-             </div>      
-            <div class="project-technologies">
-                <p class="technologies-title">Narzędzia</p>
-                <div class="technologies-icons">
-                    <img src="./images/senuto.png" alt="senuto-icon">
-                    <img src="./images/icons/seonavnobg.png" alt="seonavigator-icon">
-                    
+                    <div>
+                        <details>
+                            <summary style="cursor:pointer" class="summary">Czytaj więcej... </summary>
+                            <p>
+                        <ul>
+                            <li>ustalamy „Buyer Persona”, do kogo będziemy kierować komunikat reklamowy (szczegółowo rozpisany 
+                                <a href="https://docs.google.com/spreadsheets/d/1f9MHVEkhyv051T9yU5mBo1OyXj6j7exyueduYdiKVjg/edit#gid=0" target="_blank" class="text-link">Plan kampanii Google Ads</a>);
+                            </li>
+                            <li>poznaję założenia, potrzeby oraz oczekiwania Klienta (decoretta.pl), po czym ustalam wskaźniki KPI, które będę analizować i ulepszać.<br><br>
+                                W tym przypadku to: CPA (koszt jednego zakupu), ROAS (zwrot z inwestycji w reklamę);
+                            </li>
+                            <li>żeby zwiększyć sprzedaż, tworzę kampanię reklamową w sieci wyszukiwania Google (szczegóły, teksty reklam, słowa kluczowe, nagłówki podane w Arkuszu Google)</li>
+                        </ul>
+                       
+                        <h3>Po rozpoczęciu kampanii reklamowej, zbieram dane i optymalizuję działania reklamowe:</h3>
+                        <ul>
+                            <li>analizuję i wykluczam produkty, słowa kluczowe, miejsca docelowe;</li>
+                            <li>zmieniam stawki, testuję;</li>
+                            <li>przenoszę budżety na lepiej działające grupy reklam;</li>
+                            <li>dostosowuję teksty reklam do świąt kalendarzowych (Dzień Ojca, Dzień Matki...)</li>
+                        </ul>
+                        Żeby zwiększyć ruch na stronie można też zrobić kampanię banerową na YouTube. 
+                        
+                    </p>
+                    </details> 
+                    </div>
+                </div>
+                <div class="project-technologies">
+                    <p class="technologies-title">Narzędzia</p>
+                    <div class="technologies-icons">
+                        <img src="./images/google-ads-icon.png" alt="google-ads-icon">
+                        <img src="./images/google-analytics-icon.png" alt="analytics-icon">
+                        <a href="http://docs.google.com/spreadsheets/d/1f9MHVEkhyv051T9yU5mBo1OyXj6j7exyueduYdiKVjg/edit#gid=0" target="_blank">
+                            <img src="./images/google-sheets-icon.png" alt="google-sheets-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-content-card">
+                <a href="https://docs.google.com/document/d/1saheeMDk9yHl5zsn86se9AnS1F6Zx9izSRi9uj-nlBA/edit" target="_blank">
+                <img src="./images/decorettasenuto.png" alt="second-project">
+                    </a>
+                <div class="project-info">
+                    <h2 class="project-name">Krótki audyt UI i UX witryny, audyt SEO</h2>
+                    <a href="https://docs.google.com/document/d/1saheeMDk9yHl5zsn86se9AnS1F6Zx9izSRi9uj-nlBA/edit" class="project-link" target="_blank">
+                        <img src="./images/icons/code.svg" alt="code-icon">
+                    </a>
+                </div>
+                <div class="project-description">
+                    <p>       
+                            Przed rozpoczęciem jakichkolwiek działań reklamowych, robię:
+                        <ul>
+                            <li>krótką analizę UI i UX witryny</li>
+                            <a href="https://docs.google.com/document/d/1saheeMDk9yHl5zsn86se9AnS1F6Zx9izSRi9uj-nlBA/edit" target="_blank" class="text-link">
+                            
+                                <li>krótką analizę SEO, porównanie strony do konkurencji </li>
+                            </a>
+                        </ul>
+                        
+                            <h3>Krótka analiza UI i UX pokazała, że strona „decoretta.pl” potrzebuje poprawy:</h3>
+                            <ul>
+                                <li>zmienić (zmniejszyć) logo w górnej części witryny (zajmuje prawie połowę przestrzeni widocznej);</li>
+                                <li>dodać favicon do witryny;</li>
+                                <li>menu Główne ma linki nie do kategorii produktów, tylko do treści tekstowych typu: „Kim jesteśmy?”, „Jak pakujemy?”</li>
+                                <li>przy wyborze grupy produktów, zamiast odrazu zobaczyć produkty, klient widzi tekst opisowy. Musi scrollować, żeby dostać się do kartek produktów;</li>
+                                <li>przy wyborze sposobu wysyłki „Odbiór osobisty”, nie podano Adresu odbioru. Trzeba go samodzielnie szukać po witrynie.</li>
+                            </ul>
+                    </p>
+                </div>      
+                <div class="project-technologies">
+                    <p class="technologies-title">Narzędzia</p>
+                    <div class="technologies-icons">
+                        <img src="./images/senuto.png" alt="senuto-icon">
+                        <img src="./images/icons/seonavnobg.png" alt="seonavigator-icon">
+                        
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
-<!--ABOUT-->
-<section class="about" id="about">
-    <div class="section-title" >
-        <p class="section-title-main">Więcej</p>
-        <span class="section-title-sub">o mnie</span>
-    </div>
-    <div class="about-content">
-        <p class="about-description">
-            Przez ostatnie trzy lata doskonaliłam swoje umiejętności analityczne i dbałość o szczegóły, pracując jako Ads Quality Rater (ocena trafności i użyteczności reklam internetowych na podstawie ich treści, kontekstu i grupy docelowej). Napewno się przyda w Marketingu Internetowym.
-<br><br>Cenne doświadczenie w sprzedaży i obsłudze klienta wzmocniło moje umiejętności komunikacji i zarządzania danymi, umiejętności pracy pod presją czasu. Sukcesywnie sprzedawałam jak produkty przemysłowe tak i nieruchomości. Nic tak nie buduje zaufania jak prosta rozmowa, tak po ludzku. &#128522;
+    </main>
+    <!--ABOUT-->
+    <section class="section about" id="about">
+        <div class="section-title" >
+            <p class="section-title-main">Więcej</p>
+            <span class="section-title-sub">o mnie</span>
+        </div>
+        <div class="about-content">
+            <p class="about-description">
+                Masz do dyspozycji moją kreatywność w rozwiązywaniu trudnych zadań, analityczne myślenie i umiejętności techniczne.<br>
+                <br>Przez ostatnie trzy lata doskonaliłam swoje umiejętności analityczne i dbałość o szczegóły, pracując jako Ads Quality Rater (ocena trafności i użyteczności reklam internetowych na podstawie ich treści, kontekstu i grupy docelowej). Nauczyłam się szybko robić research i szukać odpowiedzi - cza na wykonanie jednego zadania - około minuty.
+    <br><br>Cenne doświadczenie w sprzedaży i obsłudze klienta wzmocniło moje umiejętności komunikacji i rozwiązywania problemów, umiejętności pracy pod presją czasu. Sprzedawałam jak produkty FMCG tak i nieruchomości. Nic tak nie buduje zaufania jak prosta rozmowa, tak po ludzku. &#128522;
 
-<br>Lubię poszerzać swoje horyzonty i kompetencje. Rozwijam się w Digital Marketingu, robię pierwsze kroki w programowaniu Java Script ...
+    <br>Lubię poszerzać swoje horyzonty i kompetencje. Rozwijam się w Digital Marketingu, robię pierwsze kroki w programowaniu Java Script ...  
+            </p>
+            <img src="./images/team-min.jpg" alt="team image">
+        </div>
+    </section>
+
+    <section class=" section technologies-content">
+        <div class="section-title">
+            <p class="section-title-main">Używam</p>
+            <span class="section-title-sub">narzędzi</span>
+        </div>
+        <div class="technologies-cards">
+        <div class="technologies-item">
+            <img src="./images/google-ads-icon.png" alt="google ads icon">
+            <p class="technologies-item-title">Google Ads</p>
+        </div>
+        <div class="technologies-item">
+            <img src="./images/google-analytics-icon.png" alt="google analytics icon">
+            <p class="technologies-item-title">GA4</p>
+        </div>
+        <div class="technologies-item">
+            <img src="./images/google-sheets-icon.png" alt="google sheets icon">
+            <p class="technologies-item-title">Google Sheets</p>
+        </div>
+        <div class="technologies-item">
+            <img src="./images/icons/html5.svg" alt="html5 icon">
+            <p class="technologies-item-title">HTML5</p>
+        </div>
+        <div class="technologies-item">
+            <img src="./images/icons/css-3.png" alt="css icon">
+            <p class="technologies-item-title">CSS</p>
+        </div>
+        <div class="technologies-item">
+            <img src="./images/javascript-svgrepo-com.svg" alt="javascript icon">
+            <p class="technologies-item-title">JavaScript</p>
+        </div>
+    </div>
+    
+    </section>
+
+    <section class="section contact">
+            <div class="section-title">
+                <p class="section-title-main">Wyślij</p>
+                <span class="section-title-sub">wiadomość</span>
+            </div>
+                
+                    <img src="./images/Mail.gif" alt="mail image">
+                
+                <form class="contact-form" action="https://formsubmit.co/tetmyslynska@gmail.com" method="POST">
+
+                        <div class="contact-form-field">
+                            <label for="name">Imię i nazwisko <span>*</span></label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="contact-form-field">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="contact-form-field">
+                            <label for="message">Twoja wiadomość <span>*</span></label>
+                            <textarea type="text" name="message" cols="30" rows="10" id="message" required></textarea>
+                        </div>
+                        
+                        <legend>Administratorem Twoich danych osobowych jest Tetiana Myslynska z siedzibą w Szczecinie (70-795). Szczegóły na temat przetwarzania danych znajdziesz w <a href="./polityka-prywatnosci.html" target="_blank">polityce prywatności.</a></legend>
+                        <div class="consent-field">
+                        <input type="checkbox" id="accept" name="accept" value="Wyrażam zgodę na przetwarzanie moich danych osobowych wskazanych w formularzu w celu obsługi zgłoszenia." required>
+                            <label for="accept"><span>*</span> Korzystając z formularza kontaktowego wyrażam zgodę na przetwarzanie moich danych osobowych wskazanych w formularzu w celu obsługi zgłoszenia.
+                            
+                            </label>
+                        </div>  
+                        <div class="consent-field">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="Wyrażam zgodę na otrzymywanie pocztą elektroniczną na podany adres e-mail newslettera 
+                            od Tetiany Myslynskiej oraz innych publikacji i informacji zawierających reklamy">
+                            <label for="newsletter">Zgadzam się na otrzymywanie pocztą elektroniczną na podany adres e-mail newslettera 
+                                od Tetiany Myslynskiej oraz innych publikacji i informacji zawierających reklamy zgodnie z Ustawą o świadczeniu usług drogą elektroniczną z dnia 18 lipca 2002 r. (Dz.U. 2002 Nr 144 poz.1204). Jestem świadomy_a, że podanie danych jest dobrowolne, ale niezbędne w celu otrzymania wskazanych treści oraz tego, że zgoda może zostać przeze mnie w każdym czasie wycofana.
+                            </label>
+                        </div>
+                        <br><br>
+                        <span>* - Pole wymagane</span>
+                        
             
-        </p>
-        <img src="./images/codingteam.png" alt="about image">
-    </div>
-</section>
-<div class="section-title">
-    <p class="section-title-main">Używam</p>
-    <span class="section-title-sub">narzędzi</span>
+                        
+                                
+                    <input type="hidden" name="_next" value="./thankyou.html"> 
+                    <button class="contact-form-btn" type="submit">Submit</button>
+                    
+                </form>
+        
+    </section>
 </div>
-<section class="technologies-content">
-    <div class="technologies-item">
-        <img src="./images/google-ads-icon.png" alt="google ads icon">
-        <p class="technologies-item-title">Google Ads</p>
-    </div>
-    <div class="technologies-item">
-        <img src="./images/google-analytics-icon.png" alt="google analytics icon">
-        <p class="technologies-item-title">Google Analytics</p>
-    </div>
-    <div class="technologies-item">
-        <img src="./images/google-sheets-icon.png" alt="google sheets icon">
-        <p class="technologies-item-title">Google Sheets</p>
-    </div>
-    <div class="technologies-item">
-        <img src="./images/icons/html5.svg" alt="html5 icon">
-        <p class="technologies-item-title">HTML5</p>
-    </div>
-    <div class="technologies-item">
-        <img src="./images/icons/css-3.png" alt="css icon">
-        <p class="technologies-item-title">CSS</p>
-    </div>
-    <div class="technologies-item">
-        <img src="./images/javascript-svgrepo-com.svg" alt="javascript icon">
-        <p class="technologies-item-title">JavaScript</p>
-    </div>
-   
-   
-</section>
-<div class="section-title">
-    <p class="section-title-main">Wyślij</p>
-    <span class="section-title-sub">wiadomość</span>
-</div>
-<section class="contact">
-   <img src="./images/Mail.gif" alt="mail image">
-   
-    <form class="contact-form" action="https://formsubmit.co/tetmyslynska@gmail.com" method="POST">
-        <div class="contact-form-field">
-            <label for="name">Imię i nazwisko*</label>
-            <input type="text" name="name" id="name" required>
-        </div>
-        <div class="contact-form-field">
-            <label for="email">Email*</label>
-            <input type="email" name="email" id="email" required>
-        </div>
-        <div class="contact-form-field">
-            <label for="message">Twoja wiadomość*</label>
-            <textarea type="text" name="message" cols="30" rows="10" id="message" required></textarea>
-        </div>
-
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
-        <button class="contact-form-btn">Submit</button>
-    </form>
-</section>
-<footer>Copyright &copy; 2023 Tetiana Myslynska. All rights reserved.</footer>
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<footer>Copyright &copy; 2023 Tetiana Myslynska. All rights reserved.
+</footer>
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     <script src="main.js"></script>
+   
+    <a href="#" title="Do góry!" id="scroll-to-top"><img src="./images/icons/arrowup35px.png" alt="strzałka do góry" /></a>
 </body>
 </html>

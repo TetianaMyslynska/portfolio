@@ -22,9 +22,11 @@
             <li data-key="projects" class="menu-link">
                 <a href="./projekty.html" type="link">Projekty</a>
             </li>
-            <li data-key="about" class="menu-link">Myśli</li>
+            <li data-key="about" class="menu-link">
+                <a href="./blog.html" type="link">Blog</a></li>
+            </li>
             <li data-key="contact" class="menu-link contact-btn">
-                <a href="./kontakt.html" class="link">Kontakt</a>
+                <a href="./kontakt.html" id="contact-white">Kontakt</a>
             </li>
            
         </ul>
@@ -34,33 +36,60 @@
             <span></span>
         </button>
     </header>
-    <div class="section-title">
-        <p class="section-title-main">Wyślij</p>
-        <span class="section-title-sub">wiadomość</span>
-    </div>
-    <section class="contact">
-        <img src="./images/Mail.gif" alt="mail image">
+    <div class="container">
+        <section class="section contact">
+            <div class="section-title">
+                <p class="section-title-main">Wyślij</p>
+                <span class="section-title-sub">wiadomość</span>
+            </div>
+                
+                    <img src="./images/Mail.gif" alt="mail image">
+                
+                <form class="contact-form" action="https://formsubmit.co/tetmyslynska@gmail.com" method="POST">
+
+                        <div class="contact-form-field">
+                            <label for="name">Imię i nazwisko <span>*</span></label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="contact-form-field">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="contact-form-field">
+                            <label for="message">Twoja wiadomość <span>*</span></label>
+                            <textarea type="text" name="message" cols="30" rows="10" id="message" required></textarea>
+                        </div>
+                        
+                        <legend>Administratorem Twoich danych osobowych jest Tetiana Myslynska z siedzibą w Szczecinie (70-795). Szczegóły na temat przetwarzania danych znajdziesz w <a href="./polityka-prywatnosci.html" target="_blank">polityce prywatności.</a></legend>
+                        <div class="consent-field">
+                        <input type="checkbox" id="accept" name="accept" value="Wyrażam zgodę na przetwarzanie moich danych osobowych wskazanych w formularzu w celu obsługi zgłoszenia." required>
+                            <label for="accept"><span>*</span> Korzystając z formularza kontaktowego wyrażam zgodę na przetwarzanie moich danych osobowych wskazanych w formularzu w celu obsługi zgłoszenia.
+                            
+                            </label>
+                        </div>  
+                        <div class="consent-field">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="Wyrażam zgodę na otrzymywanie pocztą elektroniczną na podany adres e-mail newslettera 
+                            od Tetiany Myslynskiej oraz innych publikacji i informacji zawierających reklamy">
+                            <label for="newsletter">Zgadzam się na otrzymywanie pocztą elektroniczną na podany adres e-mail newslettera 
+                                od Tetiany Myslynskiej oraz innych publikacji i informacji zawierających reklamy zgodnie z Ustawą o świadczeniu usług drogą elektroniczną z dnia 18 lipca 2002 r. (Dz.U. 2002 Nr 144 poz.1204). Jestem świadomy_a, że podanie danych jest dobrowolne, ale niezbędne w celu otrzymania wskazanych treści oraz tego, że zgoda może zostać przeze mnie w każdym czasie wycofana.
+                            </label>
+                        </div>
+                        <br><br>
+                        <span>* - Pole wymagane</span>
+                        
+            
+                        
+                                
+                    <input type="hidden" name="_next" value="./thankyou.html"> 
+                    <button class="contact-form-btn" type="submit">Submit</button>
+                    
+                </form>
         
-         <form class="contact-form" action="https://formsubmit.co/tetmyslynska@gmail.com" method="POST">
-             <div class="contact-form-field">
-                 <label for="name">Imię i nazwisko*</label>
-                 <input type="text" name="name" id="name" required>
-             </div>
-             <div class="contact-form-field">
-                 <label for="email">Email*</label>
-                 <input type="email" name="email" id="email" required>
-             </div>
-             <div class="contact-form-field">
-                 <label for="message">Twoja wiadomość*</label>
-                 <textarea type="text" name="message" cols="30" rows="10" id="message" required></textarea>
-             </div>
-     
-             <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
-             <button class="contact-form-btn">Submit</button>
-         </form>
     </section>
+</div>
      <footer>Copyright &copy; 2023 Tetiana Myslynska. All rights reserved.</footer>
          <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
          <script src="main.js"></script>
-    </body>
+         <a href="#" title="Do góry!" id="scroll-to-top"><img src="./images/icons/arrowup35px.png" alt="strzałka do góry" /></a>
+        </body>
 </html>

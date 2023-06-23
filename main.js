@@ -37,4 +37,22 @@ menuLinks.forEach((link) =>
     window.scrollTo({ top: section, behavior: "smooth" });
   })
 );
+/*
+
+onClick="validation(), submitForms()" - put in button
+function validation()
+{
+ var checkbox = document.getElementById("accept");
+ if (!checkbox.checked){
+  document.getElementById("error").innerHTML = "You must accept the terms and conditions by checking the Checkbox";
+  return false;
+ }
+ document.getElementById("error").innerHTML = "Thanks....";
+ return true;
+}
+
+submitForms = function(){
+  document.getElementById("contact-form").submit();
+  document.getElementById("contact-form-consent").submit();
+};*/
 
