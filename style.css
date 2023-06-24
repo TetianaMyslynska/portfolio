@@ -262,6 +262,7 @@ header.active {
         color:var(--textColor);
         text-align: right;
         font-size: 1.3rem;
+        margin-top: 1rem;
         
 }
     
@@ -398,19 +399,7 @@ header.active {
     display: block;
     margin: 0 auto;
 }
-/*
-@media only screen and (min-width: 780px){
-    .about {
-        width: 90%;
-        margin: 2rem auto;
-    }
-    .about-description {
-        padding: 1.7rem;
-    }
-    .about img {
-        width: 80%;
-    }
-}*/
+
 
 /*Technologies*/
 
@@ -721,10 +710,7 @@ font-size: 1.1rem;
         position: fixed;
         top: 0;
     }
-    .logo img{
-        width: 35%;
-    }
-  
+    
     .projects-content {
         gap: 3rem;
     }
