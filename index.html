@@ -238,7 +238,7 @@
                 <div class="contact-form-card">
                     <img src="./images/Mail.gif" alt="mail image">
                 
-                    <form class="contact-form" action="https://formsubmit.co/tetmyslynska@gmail.com" method="POST">
+                    <form id="contactform" action="https://formsubmit.io/send/tetmyslynska@gmail.com" method="POST">
 
                         <div class="contact-form-field">
                             <label for="name">Imię i nazwisko<span>*</span></label>
@@ -268,13 +268,10 @@
                             </label>
                         </div>
                         <br><br>
-                        <span>* - Pole wymagane</span>
-                        
-            
-                        
-                                
-                        <input type="hidden" name="_next" value="./thankyou.html"> 
-                        <button class="contact-form-btn" type="submit">Submit</button>
+                        <p>* - Pole wymagane</p>
+                     
+                        <input name="_redirect" type="hidden" id="name" value="https://tetianamyslynska.github.io/thankyou/">
+                        <input class="contact-form-btn" type="submit"></input>
                     
                     </form>
                 </div>    
