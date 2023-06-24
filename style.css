@@ -176,7 +176,6 @@ header.active {
 }
 
 .burger {
-    height: 3.4rem;
     width: 3.4rem;
     display: flex;
     flex-direction: column;
@@ -503,7 +502,6 @@ form .consent-field input{
     background: var(--main);
     border: none;
     color: var(--white);
-    width: 30%;
     font-size: 1rem;
     display: block;
     margin: 2rem auto 0 auto;
