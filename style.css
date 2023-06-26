@@ -924,4 +924,12 @@ font-size: 1.1rem;
         gap: 4.5rem;
     }
 }
-
+@media screen and (max-width: 450px){
+#scroll-to-top img{
+    position:fixed;
+    bottom:65px;
+    right:10px;
+    opacity:0.8;
+    width: 1.5rem;
+ }
+}
