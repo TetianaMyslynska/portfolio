@@ -549,7 +549,7 @@ footer {
 }
 
 
-.thankyou-alert h2 {
+.thankyou-alert h1 {
     font-size: 2rem;
     display: block;
     text-align: center;
@@ -560,7 +560,7 @@ footer {
 .thankyou-alert img{
     display: block;
     margin: 0 auto;
-    width: 25%;
+    width: 65%;
 }
 
 #scroll-to-top{
