@@ -245,16 +245,16 @@ display:none;
 
 .home-content h1{
     margin: 2rem auto 1rem auto;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+ 
     text-align:left;
     color: var(--textOrange);
 }
 
 .home-content p{
         margin: 0 auto;
-        font-size: 1.3rem;
-       font-weight: 500;
+        font-size: 1.2rem;
+      
        line-height: 1.8rem;
         text-align:justify;
         color: var(--textColor);
@@ -452,7 +452,7 @@ display:none;
 }
 
 .phone-contact{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--textOrange);
     text-align: center;
@@ -608,6 +608,28 @@ footer {
     width: 60%;
     display: block;
     margin: 0 auto;
+}
+
+.author-card{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: var(--textColor)
+}
+.author-card span{
+    color: var(--textOrange)
+}
+.author-card img{
+    width: 50px!important;
+    margin: 1rem;
+}
+
+.article-content > span{
+   display:block;
+        width: 100%;
+        height: 2px;
+        background-color:#b1b3bb;
+        margin-bottom: 1rem;
 }
 
 .article-text{
